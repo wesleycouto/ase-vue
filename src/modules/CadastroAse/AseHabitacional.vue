@@ -1,7 +1,7 @@
 <template>
 <div class="row">
     <div class="row">
-        <h4>Cadastro de Aviso de Sinistro Habitacional</h4>
+        <h4 class="center">Cadastro de Aviso de Sinistro Habitacional</h4>
     </div>
 </div>
 

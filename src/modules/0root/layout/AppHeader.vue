@@ -3,7 +3,7 @@
     <div class="nav-wrapper">
         <a href="#" class="brand-logo">CompLine</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a v-el:menucomunicado class="link-trigger">Comunicado de Dinistro</a></li>
+            <li><a v-el:menucomunicado class="link-trigger">Comunicado de Sinistro</a></li>
             <ui-menu open-on="hover" :trigger="$els.menucomunicado" :options="menuOptions" show-icons @option-selected="tryroute"></ui-menu>
         </ul>
     </div>
@@ -61,7 +61,7 @@ export default {
 </script>
 
 <style>
-.drop-element {
+/*.drop-element {
     top: 45px!important;
-}
+}*/
 </style>
