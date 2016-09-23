@@ -19,13 +19,9 @@ footer {
     padding-top: 0!important;
 }
 
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-main {
-    flex: 1 0 auto;
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 </style>

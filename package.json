@@ -16,6 +16,7 @@
     "vue-datepicker": "^1.2.2",
     "vue-resource": "^1.0.2",
     "vue-router": "^0.7.13",
+    "vue-validator": "^2.1.7",
     "vuex": "^1.0.0-rc.2"
   },
   "devDependencies": {

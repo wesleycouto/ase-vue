@@ -1,45 +1,29 @@
 <template>
-<!-- Dropdown Structure -->
-<!-- <ul id="menuDdlComunicadoSinistro" class="dropdown-content">
-    <li>
-        <a href="#!"> <i class="small right material-icons">recent_actors</i></a>
-    </li>
-    <li>
-        <a href="#!"> <i class="small right material-icons"></i></a>
-    </li>
-</ul> -->
-
 <nav>
     <div class="nav-wrapper">
         <a href="#" class="brand-logo">CompLine</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <!-- <li><a href="sass.html">Sass</a></li> -->
-            <!-- <li><a class="dropdown-button" href="#!" data-activates="menuDdlComunicadoSinistro" data-constrainwidth="false">Comunicado de Sinistro <i class="material-icons right">arrow_drop_down</i></a></li> -->
-
             <li><a v-el:menucomunicado class="link-trigger">Comunicado de Dinistro</a></li>
-            <ui-menu :trigger="$els.menucomunicado" :options="menuOptions" show-icons @option-selected="tryteste"></ui-menu>
+            <ui-menu open-on="hover" :trigger="$els.menucomunicado" :options="menuOptions" show-icons @option-selected="tryroute"></ui-menu>
         </ul>
     </div>
 </nav>
 </template>
 
 <script>
-let menuOptions = [{
-    id: 'habitacional',
+var menuOptions = [{
+    id: 'cadastro-habitacional',
     text: 'Cadastrar Comunicado Habicational',
-    icon: 'assignment',
-    link: {
-        path: '/'
-    }
+    icon: 'assignment'
 }, {
-    id: 'prestamista',
+    id: 'cadastro-prestamista',
     text: 'Cadastrar Comunicado Prestamista',
     icon: 'assignment',
     disabled: true
 }, {
     type: 'divider'
 }, {
-    id: 'consultar',
+    id: 'consultar-ase',
     text: 'Consultar Comunicado',
     icon: 'search'
 }, {
@@ -67,13 +51,17 @@ export default {
         });
     },
     methods: {
-        tryteste: function(element) {
-            console.log(element);
-
-            console.log(element.link);
+        tryroute: function(element) {
+            this.$router.go({
+                name: element.id
+            });
         }
     }
 }
 </script>
 
-component
+<style>
+.drop-element {
+    top: 45px!important;
+}
+</style>

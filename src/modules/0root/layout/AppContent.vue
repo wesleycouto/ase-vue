@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div id="mainContainer" class="container">
     <router-view></router-view>
 </div>
 </template>
@@ -9,3 +9,10 @@ export default {
 
 }
 </script>
+
+<style>
+#mainContainer {
+    padding-top: 5px;
+    padding-bottom: 35px;
+}
+</style>
