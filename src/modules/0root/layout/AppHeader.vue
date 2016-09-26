@@ -61,7 +61,7 @@ export default {
 </script>
 
 <style>
-/*.drop-element {
+.drop-element {
     top: 45px!important;
-}*/
+}
 </style>
