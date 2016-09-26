@@ -1,5 +1,5 @@
 <template>
-<footer class="page-footer">
+<footer class="page-footer indigo lighten-1">
     <div class="footer-copyright">
         <div class="container center">
             © 2016 Copyright CompLine
